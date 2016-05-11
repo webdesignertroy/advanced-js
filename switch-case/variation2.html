@@ -1,0 +1,55 @@
+<script>
+
+//get.Day method
+var dayName = new Date().getDay();
+
+var myMessage;
+
+
+switch(dayName){
+
+	case 1:
+	case 2:
+
+		myMessage = "The weeks just getting started for you.";
+		alert(myMessage);
+
+	break;
+	case 3:
+
+		myMessage = "Alright! It's 'Hump Day!!!";
+		alert(myMessage);
+
+	break;
+	case 4:
+
+		myMessage = "Almost there.";
+		alert(myMessage);
+
+	break;
+	case 5:
+
+		myMessage = "Time for the weekend!";
+		alert(myMessage);
+
+	break;
+	case 6:
+
+		myMessage = "Beach Day!";
+		alert(myMessage);
+
+	break;
+	case 0:
+
+		myMessage = "Arrgh! Monday is Coming.";
+		alert(myMessage);
+
+	break;
+	default:
+		myMessage = "Hmmm. " + dayName + " is not a day.";
+		alert(myMessage);
+}
+
+</script>
+</body>
+</html>

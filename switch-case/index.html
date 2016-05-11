@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Switch Case Example: Days of the week</title>
+	<style>
+		#response {
+			color: #999;
+			font-size: 1.5em;
+		}
+	</style>
+</head>
+<body>
+<div id="response"></div>
+<script>
+//Use switch statement to add a comment for everyday of the week
+var dayName = prompt("What day is it?");
+var days =['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+var printOut;
+var myMessage;
+var message;
+
+function print(message){
+	"use strict";
+	var printOut = document.getElementById("response");
+	printOut.innerHTML = message;
+};
+
+
+switch(dayName.toLowerCase()){
+
+	case days[0].toLowerCase():
+	case days[1].toLowerCase():
+
+		myMessage = "The weeks just getting started for you.";
+		print(myMessage);
+
+	break;
+	case days[2].toLowerCase():
+
+		myMessage = "Alright! It's 'Hump Day!!!";
+		print(myMessage);
+
+	break;
+	case days[3].toLowerCase():
+
+		myMessage = "Almost there.";
+		print(myMessage);
+
+	break;
+	case days[4].toLowerCase():
+
+		myMessage = "Time for the weekend!";
+		print(myMessage);
+
+	break;
+	case days[5].toLowerCase():
+
+		myMessage = "Beach Day!";
+		print(myMessage);
+
+	break;
+	case days[6].toLowerCase():
+
+		myMessage = "Arrgh! Monday is Coming.";
+		print(myMessage);
+
+	break;
+	default:
+		myMessage = "Hmmm. " + dayName + " is not a day.";
+		print(myMessage);
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<script>
+
+//Prompt question variation
+var dayName = prompt("What day is it today?");
+var days =['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+var myMessage;
+
+switch(dayName.toLowerCase()){
+
+	case days[1].toLowerCase():
+	case days[2].toLowerCase():
+
+		myMessage = "The weeks just getting started for you.";
+		alert(myMessage);
+
+	break;
+	case days[3].toLowerCase():
+
+		myMessage = "Alright! It's 'Hump Day!!!";
+		alert(myMessage);
+
+	break;
+	case days[4].toLowerCase():
+
+		myMessage = "Almost there.";
+		alert(myMessage);
+
+	break;
+	case days[5].toLowerCase():
+
+		myMessage = "Time for the weekend!";
+		alert(myMessage);
+
+	break;
+	case days[6].toLowerCase():
+
+		myMessage = "Beach Day!";
+		alert(myMessage);
+
+	break;
+	case days[0].toLowerCase():
+
+		myMessage = "Arrgh! Monday is Coming.";
+		alert(myMessage);
+
+	break;
+	default:
+		myMessage = "Hmmm. " + dayName + " is not a day.";
+		alert(myMessage);
+}
+
+</script>
+</body>
+</html>

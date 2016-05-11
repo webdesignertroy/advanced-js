@@ -1,0 +1,50 @@
+<script>
+
+
+// create an array
+var randomNumberA = [];
+var ArrayforMax = [];
+var ArrayforMin = [];
+
+// function to generate random number between range
+function getRandomNum(min, max) {
+	return ((Math.random() * Math.floor(max - min)) +1 ) + min -1;
+} /* Added by Troy */
+
+//section for functions to report on array 
+function getMaxOfArray(ArraywithNumbers){
+  return Math.max.apply(null, ArraywithNumbers);
+}
+
+function getMinOfArray(ArraywithNumbers){
+  return Math.min.apply(null, ArraywithNumbers);
+}
+
+//loop 10 times to get 10 random Min/Max
+for(j=0; j<10; j++){
+
+	//loop to push numbers into array 
+	for(i=0; i<100; i++){
+	  randomNumberA.push(Math.round(getRandomNum(1, 1000))); 
+
+	}
+
+	console.log(randomNumberA);
+	console.log("Max: " + getMaxOfArray(randomNumberA));
+	console.log("Min: " + getMinOfArray(randomNumberA));
+
+	var tempholderformax = getMaxOfArray(randomNumberA);
+	var tempholderformin = getMinOfArray(randomNumberA);
+
+	ArrayforMax.push(tempholderformax);
+	ArrayforMin.push(tempholderformin);
+
+	console.log(ArrayforMax);
+	console.log(ArrayforMin);
+
+	// create a fresh array  /* Added by Troy */
+	randomNumberA = [];
+	ArrayforMax = [];
+	ArrayforMin = [];
+}
+</script>
